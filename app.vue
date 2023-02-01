@@ -81,7 +81,7 @@
                   <div class="relative mx-auto grid max-w-7xl grid-cols-1 lg:grid-cols-2">
                     <nav class="grid gap-y-10 bg-white px-4 py-8 sm:grid-cols-2 sm:gap-x-8 sm:py-12 sm:px-6 lg:px-8 xl:pr-12">
                       <div>
-                        <h3 class="text-base font-medium text-gray-500">Company</h3>
+                        <h3 class="text-base font-medium text-gray-500">Informatie</h3>
                         <ul role="list" class="mt-5 space-y-6">
                           <li v-for="item in company" :key="item.name" class="flow-root">
                             <a :href="item.href" class="-m-3 flex items-center rounded-md p-3 text-base font-medium text-gray-900 hover:bg-gray-50">
@@ -92,7 +92,7 @@
                         </ul>
                       </div>
                       <div>
-                        <h3 class="text-base font-medium text-gray-500">Resources</h3>
+                        <h3 class="text-base font-medium text-gray-500">Website</h3>
                         <ul role="list" class="mt-5 space-y-6">
                           <li v-for="item in resources" :key="item.name" class="flow-root">
                             <a :href="item.href" class="-m-3 flex items-center rounded-md p-3 text-base font-medium text-gray-900 hover:bg-gray-50">
@@ -105,7 +105,7 @@
                     </nav>
                     <div class="bg-gray-50 px-4 py-8 sm:py-12 sm:px-6 lg:px-8 xl:pl-12">
                       <div>
-                        <h3 class="text-base font-medium text-gray-500">From the blog</h3>
+                        <h3 class="text-base font-medium text-gray-500">Laatste nieuws</h3>
                         <ul role="list" class="mt-6 space-y-6">
                           <li v-for="post in blogPosts" :key="post.id" class="flow-root">
                             <a :href="post.href" class="-m-3 flex rounded-lg p-3 hover:bg-gray-100">
@@ -121,8 +121,8 @@
                         </ul>
                       </div>
                       <div class="mt-6 text-sm font-medium">
-                        <a href="#" class="text-indigo-600 hover:text-indigo-500">
-                          View all posts
+                        <a href="/nieuws" class="text-indigo-600 hover:text-indigo-500">
+                          Zie al het nieuws
                           <span aria-hidden="true"> &rarr;</span>
                         </a>
                       </div>
@@ -192,12 +192,6 @@
                       <component :is="item.icon" class="h-6 w-6" aria-hidden="true" />
                     </div>
                     <div class="ml-4 text-base font-medium text-gray-900">{{ item.name }}</div>
-                  </a>
-                </div>
-                <div class="mt-8 text-base">
-                  <a href="#" class="font-medium text-indigo-600 hover:text-indigo-500">
-                    View all products
-                    <span aria-hidden="true"> &rarr;</span>
                   </a>
                 </div>
               </nav>
@@ -438,49 +432,50 @@ const lineup = [
 ]
 const solutions = [
   {
-    name: 'Analytics',
-    description: 'Get a better understanding of where your traffic is coming from.',
-    href: '#',
+    name: 'Programmering',
+    description: 'Ga naar de programmering van BAM! Muziek, Theater en Kunst.',
+    href: '/programma',
     icon: ChartBarIcon,
   },
   {
-    name: 'Engagement',
-    description: 'Speak directly to your customers in a more meaningful way.',
-    href: '#',
+    name: 'Nieuws',
+    description: 'Laatste Nieuws van BAM!',
+    href: '/nieuws',
     icon: CursorArrowRaysIcon,
   },
-  { name: 'Security', description: "Your customers' data will be safe and secure.", href: '#', icon: ShieldCheckIcon },
+  { name: 'Vrijwilliger worden', description: "Vrijwilliger worden bij BAM! Festival", href: '/inschrijven-vrijwilligers', icon: ShieldCheckIcon },
   {
-    name: 'Integrations',
-    description: "Connect with third-party tools that you're already using.",
-    href: '#',
+    name: 'Fotos',
+    description: "Fotoalbums van de voorgaande edites per fotograaf",
+    href: '/fotoalbums',
     icon: Squares2X2Icon,
   },
-  { name: 'Security', description: "Your customers' data will be safe and secure.", href: '#', icon: ShieldCheckIcon },
+  { name: 'Sponsoren', description: "Sponsoren van BAM! Festival", href: '/sponsoren', icon: ShieldCheckIcon },
   {
-    name: 'Integrations',
-    description: "Connect with third-party tools that you're already using.",
-    href: '#',
+    name: 'Contact',
+    description: "Contact opnemen met BAM! Festival",
+    href: '/contact',
     icon: Squares2X2Icon,
   },
 ]
 const callsToAction = [
-  { name: 'Watch Demo', href: '#', icon: PlayIcon },
-  { name: 'View All Products', href: '#', icon: CheckCircleIcon },
-  { name: 'Contact Sales', href: '#', icon: PhoneIcon },
+  { name: 'Aftermovie', href: '/aftermovies', icon: PlayIcon },
+  { name: 'Programmering', href: '/programma', icon: CheckCircleIcon },
+  { name: 'Contact', href: '/contact', icon: PhoneIcon },
 ]
 const company = [
-  { name: 'About', href: '#', icon: InformationCircleIcon },
-  { name: 'Customers', href: '#', icon: BuildingOfficeIcon },
-  { name: 'Press', href: '#', icon: NewspaperIcon },
-  { name: 'Careers', href: '#', icon: BriefcaseIcon },
-  { name: 'Privacy', href: '#', icon: ShieldCheckIcon },
+  { name: 'Informatie algemeen', href: '#', icon: InformationCircleIcon },
+  { name: 'Route en Parkeren', href: '/route-parkeren', icon: BuildingOfficeIcon },
+  { name: 'Huisregels', href: '/huisregels', icon: NewspaperIcon },
+  { name: 'Historie', href: '/historie', icon: BriefcaseIcon },
+  
 ]
 const resources = [
-  { name: 'Community', href: '#', icon: UserGroupIcon },
-  { name: 'Partners', href: '#', icon: GlobeAltIcon },
-  { name: 'Guides', href: '#', icon: BookmarkSquareIcon },
-  { name: 'Webinars', href: '#', icon: ComputerDesktopIcon },
+  { name: 'Vrijwilliger worden', href: '/inschrijven-vrijwilligers', icon: UserGroupIcon },
+  { name: 'Sponsor worden', href: '/sponsor-worden', icon: GlobeAltIcon },
+  { name: 'Pers en fotografie', href: '/pers-fotografie', icon: BookmarkSquareIcon },
+  { name: 'Enquete', href: '/enquete', icon: ComputerDesktopIcon },
+  { name: 'Privacy', href: '/disclaimer-copy-right-privacy', icon: ShieldCheckIcon },
 ]
 const blogPosts = [
   {
