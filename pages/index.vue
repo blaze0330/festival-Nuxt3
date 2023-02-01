@@ -303,10 +303,10 @@
   ]
   const footerNavigation = {
     solutions: [
-      { name: 'Marketing', href: '#' },
-      { name: 'Analytics', href: '#' },
-      { name: 'Commerce', href: '#' },
-      { name: 'Insights', href: '#' },
+      { name: 'Muziek', href: '/programma' },
+      { name: 'Theater', href: '/theater' },
+      { name: 'Kunst', href: '/kunst' },
+     
     ],
     support: [
       { name: 'Pricing', href: '#' },
