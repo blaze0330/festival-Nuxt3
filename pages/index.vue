@@ -7,7 +7,7 @@
         <nuxt-img 
             class="h-full w-full object-cover sm:rounded-2xl p-8" 
             format="webp" src="/images/headers/header_weekend_2023.jpg" 
-            sizes="xs:320px  sm:640px md:768px lg:1024px xl:1280px xxl:1536px 2xl:1536px"
+            
             alt="Header BAM! Festival Hengelo (Ov.) - 2023"
         ></nuxt-img>
       </div>
