@@ -291,7 +291,7 @@
           </div>
         </div>
       </div>
-      <div class="mt-16 border-t border-gray-900/10 pt-8 sm:mt-20 lg:mt-24">
+      <div class="mt-16 border-t border-gray-900/10 pt-8 sm:mt-20 lg:mt-20">
         <p class="text-base leading-5 text-gray-800 text-center">&copy; 2023 BAM! Festival Hengelo | Vondelstraat 49 | 7551 BB Hengelo (Ov).  |  Deze site gebruikt cookies klik  <NuxtLink to="/cookies">hier</NuxtLink>, voor meer info.  <NuxtLink to="/disclaimer-copy-right-privacy">Disclaimer</NuxtLink></p>
       </div>
     </div>
