@@ -31,6 +31,7 @@
           </PopoverButton>
         </div>
         <div class="hidden md:flex md:flex-1 md:items-center md:justify-between">
+          <a href="/" class="text-base font-medium text-gray-500 hover:text-gray-900">Home</a>
           <a href="/nieuws" class="text-base font-medium text-gray-500 hover:text-gray-900">Nieuws</a>
           <PopoverGroup as="nav" class="flex space-x-10">
             <Popover v-slot="{ open }">
@@ -243,7 +244,7 @@
                       c3.3-11.7,6.1-23.1,8-33.1l0.5-0.1c2.1,10,4.6,18.4,7.5,27.5l6.1,19.9L177.9,301.5z"/>
                     <polygon points="450.9,134.6 456.4,260.5 493.9,253.6 500.8,125.4"/>
                 </svg>
-          <p class="text-sm leading-6 text-gray-600">Het BAM! Festival is een gratis festival dat sinds 2008 jaarlijks in het Prins Bernhardplantsoen van Hengelo (OV) gehouden wordt.  In 2022 is er de vrijdagavond bijgekomen.</p>
+          <p class="text-base leading-6 text-gray-600">Het BAM! Festival is een gratis festival dat sinds 2008 jaarlijks in het Prins Bernhardplantsoen van Hengelo (OV) gehouden wordt.  In 2022 is er de vrijdagavond bijgekomen.</p>
           <div class="flex space-x-6">
             <a v-for="item in navigation.social" :key="item.name" :href="item.href" class="text-gray-400 hover:text-gray-500">
               <span class="sr-only">{{ item.name }}</span>
@@ -254,36 +255,36 @@
         <div class="mt-16 grid grid-cols-2 gap-8 xl:col-span-2 xl:mt-0">
           <div class="md:grid md:grid-cols-2 md:gap-8">
             <div>
-              <h3 class="text-sm font-semibold leading-6 text-gray-900">Programmering</h3>
-              <ul role="list" class="mt-6 space-y-4">
+              <h3 class="text-base font-semibold leading-6 text-gray-900">Programmering</h3>
+              <ul role="list" class="mt-6 space-y-3">
                 <li v-for="item in navigation.solutions" :key="item.name">
-                  <a :href="item.href" class="text-sm leading-6 text-gray-600 hover:text-gray-900">{{ item.name }}</a>
+                  <a :href="item.href" class="text-base leading-6 text-gray-600 hover:text-gray-900">{{ item.name }}</a>
                 </li>
               </ul>
             </div>
             <div class="mt-10 md:mt-0">
-              <h3 class="text-sm font-semibold leading-6 text-gray-900">Informatie</h3>
-              <ul role="list" class="mt-6 space-y-4">
+              <h3 class="text-base font-semibold leading-6 text-gray-900">Informatie</h3>
+              <ul role="list" class="mt-6 space-y-3">
                 <li v-for="item in navigation.support" :key="item.name">
-                  <a :href="item.href" class="text-sm leading-6 text-gray-600 hover:text-gray-900">{{ item.name }}</a>
+                  <a :href="item.href" class="text-base leading-6 text-gray-600 hover:text-gray-900">{{ item.name }}</a>
                 </li>
               </ul>
             </div>
           </div>
           <div class="md:grid md:grid-cols-2 md:gap-8">
             <div>
-              <h3 class="text-sm font-semibold leading-6 text-gray-900">Website</h3>
-              <ul role="list" class="mt-6 space-y-4">
+              <h3 class="text-base font-semibold leading-6 text-gray-900">Website</h3>
+              <ul role="list" class="mt-6 space-y-3">
                 <li v-for="item in navigation.company" :key="item.name">
-                  <a :href="item.href" class="text-sm leading-6 text-gray-600 hover:text-gray-900">{{ item.name }}</a>
+                  <a :href="item.href" class="text-base leading-6 text-gray-600 hover:text-gray-900">{{ item.name }}</a>
                 </li>
               </ul>
             </div>
             <div class="mt-10 md:mt-0">
-              <h3 class="text-sm font-semibold leading-6 text-gray-900">Contact met BAM!</h3>
-              <ul role="list" class="mt-6 space-y-4">
+              <h3 class="text-base font-semibold leading-6 text-gray-900">Contact met BAM!</h3>
+              <ul role="list" class="mt-6 space-y-3">
                 <li v-for="item in navigation.legal" :key="item.name">
-                  <a :href="item.href" class="text-sm leading-6 text-gray-600 hover:text-gray-900">{{ item.name }}</a>
+                  <a :href="item.href" class="text-base leading-6 text-gray-600 hover:text-gray-900">{{ item.name }}</a>
                 </li>
               </ul>
             </div>
@@ -291,7 +292,7 @@
         </div>
       </div>
       <div class="mt-16 border-t border-gray-900/10 pt-8 sm:mt-20 lg:mt-24">
-        <p class="text-xs leading-5 text-gray-500">&copy; 2023 BAM! Festival Hengelo | Vondelstraat 49 | 7551 BB Hengelo (Ov).  |  Deze site gebruikt <NuxtLink to="/cookies">cookies</NuxtLink>, klik hier voor meer info.  <NuxtLink to="/disclaimer-copy-right-privacy">Disclaimer</NuxtLink></p>
+        <p class="text-base leading-5 text-gray-800 text-center">&copy; 2023 BAM! Festival Hengelo | Vondelstraat 49 | 7551 BB Hengelo (Ov).  |  Deze site gebruikt cookies klik  <NuxtLink to="/cookies">hier</NuxtLink>, voor meer info.  <NuxtLink to="/disclaimer-copy-right-privacy">Disclaimer</NuxtLink></p>
       </div>
     </div>
   </footer>

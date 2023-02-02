@@ -2,7 +2,9 @@
 export default defineNuxtConfig({
     ssr: true, // default value
     mode: "universal",
-
+    image: {
+        provider: "ipx"
+    },
     modules: [
         '@nuxtjs/tailwindcss',
         '@nuxt/image-edge'
