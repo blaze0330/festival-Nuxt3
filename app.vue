@@ -227,7 +227,7 @@
 
   <footer class="bg-white" aria-labelledby="footer-heading">
     <h2 id="footer-heading" class="sr-only">Footer</h2>
-    <div class="mx-auto max-w-7xl px-6 pb-8 pt-16 sm:pt-24 lg:px-8 lg:pt-32">
+    <div class="mx-auto w-full px-6 pb-8 pt-16 sm:pt-24 lg:px-8 lg:pt-32">
       <div class="xl:grid xl:grid-cols-3 xl:gap-8">
         <div class="space-y-8">
           <svg class="h-7 w-auto sm:h-10" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
@@ -244,7 +244,7 @@
                       c3.3-11.7,6.1-23.1,8-33.1l0.5-0.1c2.1,10,4.6,18.4,7.5,27.5l6.1,19.9L177.9,301.5z"/>
                     <polygon points="450.9,134.6 456.4,260.5 493.9,253.6 500.8,125.4"/>
                 </svg>
-          <p class="text-base leading-6 text-gray-600">Het BAM! Festival is een gratis festival dat sinds 2008 jaarlijks in het Prins Bernhardplantsoen van Hengelo (OV) gehouden wordt.  In 2022 is er de vrijdagavond bijgekomen.</p>
+          <p class="text-base leading-6 text-gray-600">De eerste editie van het BAM! Festival werd in 2008 gehouden. Met een grote passie voor kunst, cultuur en muziek zet een grote groep vrijwilligers zich al jaren in om een festival te organiseren dat jaarlijks ongeveer 17.000 bezoekers trekt. Naast muziek is er ook een uitgebreid theaterprogramma en een speciaal programma voor kinderen. Voor beide dagen is de entree gratis.</p>
           <div class="flex space-x-6">
             <a v-for="item in navigation.social" :key="item.name" :href="item.href" class="text-gray-400 hover:text-gray-500">
               <span class="sr-only">{{ item.name }}</span>
