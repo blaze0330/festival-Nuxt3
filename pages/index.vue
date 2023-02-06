@@ -201,46 +201,82 @@ Naast deze kern zetten tal van vrijwilligers zich in om te zorgen dat het festiv
   </div>
   <div class="mt-6 grid grid-cols-2 gap-0.5 md:grid-cols-6 xl:grid-cols-12 lg:mt-8">
         <div class="col-span-1 flex justify-center  py-8 px-8">
-          <nuxt-img src="https://cms.bamfestival.nl/sites/default/files/sponsoren/brouwerij_logo_op_witte_achtergrond_0.png" width="100px" height="100px" format="webp" alt="Logo Brand, sponsor van BAM! Festival Hengelo (Ov.)"></nuxt-img>
+          <nuxt-img src="https://cms.bamfestival.nl/sites/default/files/sponsoren/brouwerij_logo_op_witte_achtergrond_0.png"  format="webp" alt="Logo Brand, sponsor van BAM! Festival Hengelo (Ov.)"></nuxt-img>
         </div>
         <div class="col-span-1 flex justify-center  py-8 px-8">
-          <nuxt-img src="https://cms.bamfestival.nl/sites/default/files/sponsoren/brouwerij_logo_op_witte_achtergrond_0.png" width="100px" height="100px" format="webp" alt="Logo Brand, sponsor van BAM! Festival Hengelo (Ov.)"></nuxt-img>
+          <nuxt-img src="https://cms.bamfestival.nl/sites/default/files/sponsoren/brouwerij_logo_op_witte_achtergrond_0.png"  format="webp" alt="Logo Brand, sponsor van BAM! Festival Hengelo (Ov.)"></nuxt-img>
         </div>
         <div class="col-span-1 flex justify-center  py-8 px-8">
-          <nuxt-img src="https://cms.bamfestival.nl/sites/default/files/sponsoren/brouwerij_logo_op_witte_achtergrond_0.png" width="100px" height="100px" format="webp" alt="Logo Brand, sponsor van BAM! Festival Hengelo (Ov.)"></nuxt-img>
+          <nuxt-img src="https://cms.bamfestival.nl/sites/default/files/sponsoren/brouwerij_logo_op_witte_achtergrond_0.png"  format="webp" alt="Logo Brand, sponsor van BAM! Festival Hengelo (Ov.)"></nuxt-img>
         </div>
         <div class="col-span-1 flex justify-center  py-8 px-8">
-          <nuxt-img src="https://cms.bamfestival.nl/sites/default/files/sponsoren/brouwerij_logo_op_witte_achtergrond_0.png" width="100px" height="100px" format="webp" alt="Logo Brand, sponsor van BAM! Festival Hengelo (Ov.)"></nuxt-img>
+          <nuxt-img src="https://cms.bamfestival.nl/sites/default/files/sponsoren/brouwerij_logo_op_witte_achtergrond_0.png"  format="webp" alt="Logo Brand, sponsor van BAM! Festival Hengelo (Ov.)"></nuxt-img>
         </div>
         <div class="col-span-1 flex justify-center  py-8 px-8">
-          <nuxt-img src="https://cms.bamfestival.nl/sites/default/files/sponsoren/brouwerij_logo_op_witte_achtergrond_0.png" width="100px" height="100px" format="webp" alt="Logo Brand, sponsor van BAM! Festival Hengelo (Ov.)"></nuxt-img>
+          <nuxt-img src="https://cms.bamfestival.nl/sites/default/files/sponsoren/brouwerij_logo_op_witte_achtergrond_0.png"  format="webp" alt="Logo Brand, sponsor van BAM! Festival Hengelo (Ov.)"></nuxt-img>
         </div>
         <div class="col-span-1 flex justify-center  py-8 px-8">
-          <nuxt-img src="https://cms.bamfestival.nl/sites/default/files/sponsoren/brouwerij_logo_op_witte_achtergrond_0.png" width="100px" height="100px" format="webp" alt="Logo Brand, sponsor van BAM! Festival Hengelo (Ov.)"></nuxt-img>
+          <nuxt-img src="https://cms.bamfestival.nl/sites/default/files/sponsoren/brouwerij_logo_op_witte_achtergrond_0.png"  format="webp" alt="Logo Brand, sponsor van BAM! Festival Hengelo (Ov.)"></nuxt-img>
         </div>
         <div class="col-span-1 flex justify-center  py-8 px-8">
-          <nuxt-img src="https://cms.bamfestival.nl/sites/default/files/sponsoren/brouwerij_logo_op_witte_achtergrond_0.png" width="100px" height="100px" format="webp" alt="Logo Brand, sponsor van BAM! Festival Hengelo (Ov.)"></nuxt-img>
+          <nuxt-img src="https://cms.bamfestival.nl/sites/default/files/sponsoren/brouwerij_logo_op_witte_achtergrond_0.png"  format="webp" alt="Logo Brand, sponsor van BAM! Festival Hengelo (Ov.)"></nuxt-img>
         </div>
         <div class="col-span-1 flex justify-center  py-8 px-8">
-          <nuxt-img src="https://cms.bamfestival.nl/sites/default/files/sponsoren/brouwerij_logo_op_witte_achtergrond_0.png" width="100px" height="100px" format="webp" alt="Logo Brand, sponsor van BAM! Festival Hengelo (Ov.)"></nuxt-img>
+          <nuxt-img src="https://cms.bamfestival.nl/sites/default/files/sponsoren/brouwerij_logo_op_witte_achtergrond_0.png"  format="webp" alt="Logo Brand, sponsor van BAM! Festival Hengelo (Ov.)"></nuxt-img>
         </div>
         <div class="col-span-1 flex justify-center  py-8 px-8">
-          <nuxt-img src="https://cms.bamfestival.nl/sites/default/files/sponsoren/brouwerij_logo_op_witte_achtergrond_0.png" width="100px" height="100px" format="webp" alt="Logo Brand, sponsor van BAM! Festival Hengelo (Ov.)"></nuxt-img>
+          <nuxt-img src="https://cms.bamfestival.nl/sites/default/files/sponsoren/brouwerij_logo_op_witte_achtergrond_0.png"  format="webp" alt="Logo Brand, sponsor van BAM! Festival Hengelo (Ov.)"></nuxt-img>
         </div>
         <div class="col-span-1 flex justify-center  py-8 px-8">
-          <nuxt-img src="https://cms.bamfestival.nl/sites/default/files/sponsoren/brouwerij_logo_op_witte_achtergrond_0.png" width="100px" height="100px" format="webp" alt="Logo Brand, sponsor van BAM! Festival Hengelo (Ov.)"></nuxt-img>
+          <nuxt-img src="https://cms.bamfestival.nl/sites/default/files/sponsoren/brouwerij_logo_op_witte_achtergrond_0.png"  format="webp" alt="Logo Brand, sponsor van BAM! Festival Hengelo (Ov.)"></nuxt-img>
         </div>
         <div class="col-span-1 flex justify-center  py-8 px-8">
-          <nuxt-img src="https://cms.bamfestival.nl/sites/default/files/sponsoren/brouwerij_logo_op_witte_achtergrond_0.png" width="100px" height="100px" format="webp" alt="Logo Brand, sponsor van BAM! Festival Hengelo (Ov.)"></nuxt-img>
+          <nuxt-img src="https://cms.bamfestival.nl/sites/default/files/sponsoren/brouwerij_logo_op_witte_achtergrond_0.png"  format="webp" alt="Logo Brand, sponsor van BAM! Festival Hengelo (Ov.)"></nuxt-img>
         </div>
         <div class="col-span-1 flex justify-center  py-8 px-8">
-          <nuxt-img src="https://cms.bamfestival.nl/sites/default/files/sponsoren/brouwerij_logo_op_witte_achtergrond_0.png" width="100px" height="100px" format="webp" alt="Logo Brand, sponsor van BAM! Festival Hengelo (Ov.)"></nuxt-img>
+          <nuxt-img src="https://cms.bamfestival.nl/sites/default/files/sponsoren/brouwerij_logo_op_witte_achtergrond_0.png"  format="webp" alt="Logo Brand, sponsor van BAM! Festival Hengelo (Ov.)"></nuxt-img>
         </div>
         <div class="col-span-1 flex justify-center  py-8 px-8">
-          <nuxt-img src="https://cms.bamfestival.nl/sites/default/files/sponsoren/brouwerij_logo_op_witte_achtergrond_0.png" width="100px" height="100px" format="webp" alt="Logo Brand, sponsor van BAM! Festival Hengelo (Ov.)"></nuxt-img>
+          <nuxt-img src="https://cms.bamfestival.nl/sites/default/files/sponsoren/brouwerij_logo_op_witte_achtergrond_0.png"  format="webp" alt="Logo Brand, sponsor van BAM! Festival Hengelo (Ov.)"></nuxt-img>
         </div>
         <div class="col-span-1 flex justify-center  py-8 px-8">
-          <nuxt-img src="https://cms.bamfestival.nl/sites/default/files/sponsoren/brouwerij_logo_op_witte_achtergrond_0.png" width="100px" height="100px" format="webp" alt="Logo Brand, sponsor van BAM! Festival Hengelo (Ov.)"></nuxt-img>
+          <nuxt-img src="https://cms.bamfestival.nl/sites/default/files/sponsoren/brouwerij_logo_op_witte_achtergrond_0.png"  format="webp" alt="Logo Brand, sponsor van BAM! Festival Hengelo (Ov.)"></nuxt-img>
+        </div>
+        <div class="col-span-1 flex justify-center  py-8 px-8">
+          <nuxt-img src="https://cms.bamfestival.nl/sites/default/files/sponsoren/brouwerij_logo_op_witte_achtergrond_0.png"  format="webp" alt="Logo Brand, sponsor van BAM! Festival Hengelo (Ov.)"></nuxt-img>
+        </div>
+        <div class="col-span-1 flex justify-center  py-8 px-8">
+          <nuxt-img src="https://cms.bamfestival.nl/sites/default/files/sponsoren/brouwerij_logo_op_witte_achtergrond_0.png"  format="webp" alt="Logo Brand, sponsor van BAM! Festival Hengelo (Ov.)"></nuxt-img>
+        </div>
+        <div class="col-span-1 flex justify-center  py-8 px-8">
+          <nuxt-img src="https://cms.bamfestival.nl/sites/default/files/sponsoren/brouwerij_logo_op_witte_achtergrond_0.png"  format="webp" alt="Logo Brand, sponsor van BAM! Festival Hengelo (Ov.)"></nuxt-img>
+        </div>
+        <div class="col-span-1 flex justify-center  py-8 px-8">
+          <nuxt-img src="https://cms.bamfestival.nl/sites/default/files/sponsoren/brouwerij_logo_op_witte_achtergrond_0.png"  format="webp" alt="Logo Brand, sponsor van BAM! Festival Hengelo (Ov.)"></nuxt-img>
+        </div>
+        <div class="col-span-1 flex justify-center  py-8 px-8">
+          <nuxt-img src="https://cms.bamfestival.nl/sites/default/files/sponsoren/brouwerij_logo_op_witte_achtergrond_0.png"  format="webp" alt="Logo Brand, sponsor van BAM! Festival Hengelo (Ov.)"></nuxt-img>
+        </div>
+        <div class="col-span-1 flex justify-center  py-8 px-8">
+          <nuxt-img src="https://cms.bamfestival.nl/sites/default/files/sponsoren/brouwerij_logo_op_witte_achtergrond_0.png"  format="webp" alt="Logo Brand, sponsor van BAM! Festival Hengelo (Ov.)"></nuxt-img>
+        </div>
+        <div class="col-span-1 flex justify-center  py-8 px-8">
+          <nuxt-img src="https://cms.bamfestival.nl/sites/default/files/sponsoren/brouwerij_logo_op_witte_achtergrond_0.png"  format="webp" alt="Logo Brand, sponsor van BAM! Festival Hengelo (Ov.)"></nuxt-img>
+        </div>
+        <div class="col-span-1 flex justify-center  py-8 px-8">
+          <nuxt-img src="https://cms.bamfestival.nl/sites/default/files/sponsoren/brouwerij_logo_op_witte_achtergrond_0.png"  format="webp" alt="Logo Brand, sponsor van BAM! Festival Hengelo (Ov.)"></nuxt-img>
+        </div>
+        <div class="col-span-1 flex justify-center  py-8 px-8">
+          <nuxt-img src="https://cms.bamfestival.nl/sites/default/files/sponsoren/brouwerij_logo_op_witte_achtergrond_0.png"  format="webp" alt="Logo Brand, sponsor van BAM! Festival Hengelo (Ov.)"></nuxt-img>
+        </div>
+        <div class="col-span-1 flex justify-center  py-8 px-8">
+          <nuxt-img src="https://cms.bamfestival.nl/sites/default/files/sponsoren/brouwerij_logo_op_witte_achtergrond_0.png"  format="webp" alt="Logo Brand, sponsor van BAM! Festival Hengelo (Ov.)"></nuxt-img>
+        </div>
+        <div class="col-span-1 flex justify-center  py-8 px-8">
+          <nuxt-img src="https://cms.bamfestival.nl/sites/default/files/sponsoren/brouwerij_logo_op_witte_achtergrond_0.png"  format="webp" alt="Logo Brand, sponsor van BAM! Festival Hengelo (Ov.)"></nuxt-img>
+        </div>
+        <div class="col-span-1 flex justify-center  py-8 px-8">
+          <nuxt-img src="https://cms.bamfestival.nl/sites/default/files/sponsoren/brouwerij_logo_op_witte_achtergrond_0.png"  format="webp" alt="Logo Brand, sponsor van BAM! Festival Hengelo (Ov.)"></nuxt-img>
         </div>
     
 
