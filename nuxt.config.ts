@@ -5,9 +5,15 @@ export default defineNuxtConfig({
     image: {
         provider: "ipx"
     },
+    jsonApi: {
+        baseURL: 'https://api.bamfestival.nl/jsonapi',
+        /* other module options */
+      },
+      
     modules: [
         '@nuxtjs/tailwindcss',
-        '@nuxt/image-edge'
+        '@nuxt/image-edge',
+        'nuxt-jsonapi'
     ]
     
 })

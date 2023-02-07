@@ -301,7 +301,7 @@
 <script setup>
 
 import { defineComponent, h } from 'vue'
-
+const apiUrl = 'https://api.bamfestival.nl'
 const navigation = {
   solutions: [
     { name: 'Muziek', href: '/programma' },
