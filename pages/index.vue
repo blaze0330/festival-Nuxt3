@@ -96,9 +96,9 @@
                   {{ article.title }}
                 </p>
                 <div class="flex space-x-1 text-sm text-gray-500">
-                  <time :datetime="article.created">{{ article.created }}</time>
+                  <time :datetime="article.created">{{ formatDateLong(article.created) }}</time>
                   <span aria-hidden="true">&middot;</span>
-                  <span>{{ article.changed }} read</span>
+                  <span>{{ formatDateLong(article.changed)  }}</span>
                 </div>
               </div>
             </div>
@@ -209,6 +209,14 @@ Naast deze kern zetten tal van vrijwilligers zich in om te zorgen dat het festiv
 </template>
 
 <script setup>
+function formatDateLong(time) {
+    const date = new Date(time);
+    
+
+    const options = { weekday: 'long', year: 'numeric', month: 'long', day: 'numeric', hour: 'numeric', minute: 'numeric'};
+    
+    return date.toLocaleString("nl-NL", options);
+}
 import { useNuxtApp, useAsyncData } from '#app'
 import consolaGlobalInstance from 'consola';
 const apiUrl = 'https://api.bamfestival.nl'
