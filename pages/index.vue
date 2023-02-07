@@ -64,7 +64,7 @@
 
 
 
-
+<!-- laatste nieuws -->
   <div class="relative bg-gray-50 px-6 pt-16 pb-20 lg:px-8 lg:pt-4 lg:pb-28">
     <div class="absolute inset-0">
       <div class="h-1/3 bg-white sm:h-2/3" />
@@ -75,35 +75,30 @@
         
       </div>
       <div class="mx-auto mt-12 grid max-w-lg gap-5 lg:max-w-none lg:grid-cols-3">
-        <div v-for="post in posts" :key="post.title" class="flex flex-col overflow-hidden rounded-lg shadow-lg">
+        <div v-for="article in articles.data" :key="article.title" class="flex flex-col overflow-hidden rounded-lg shadow-lg">
           <div class="flex-shrink-0">
-            <img class="h-96 w-full object-cover" :src="post.imageUrl" alt="" />
+            <img class="h-96 w-full object-cover" :src="`${ apiUrl }${ article.field_image.uri.url}`" alt="" />
           </div>
           <div class="flex flex-1 flex-col justify-between bg-white p-6">
             <div class="flex-1">
               <p class="text-sm font-medium text-indigo-600">
-                <a :href="post.category.href" class="hover:underline">{{ post.category.name }}</a>
+                <a href="#" class="hover:underline">{{ article.title  }}</a>
               </p>
-              <a :href="post.href" class="mt-2 block">
-                <p class="text-xl font-semibold text-gray-900">{{ post.title }}</p>
-                <p class="mt-3 text-base text-gray-500">{{ post.description }}</p>
+              <a href="#" class="mt-2 block">
+                <p class="text-xl font-semibold text-gray-900">{{ article.title }}</p>
+                <p class="mt-3 text-base text-gray-500" v-html="article.body.processed"></p>
               </a>
             </div>
             <div class="mt-6 flex items-center">
-              <div class="flex-shrink-0">
-                <a :href="post.author.href">
-                  <span class="sr-only">{{ post.author.name }}</span>
-                  <img class="h-10 w-10 rounded-full" :src="post.author.imageUrl" alt="" />
-                </a>
-              </div>
+ 
               <div class="ml-3">
                 <p class="text-sm font-medium text-gray-900">
-                  <a :href="post.author.href" class="hover:underline">{{ post.author.name }}</a>
+                  {{ article.title }}
                 </p>
                 <div class="flex space-x-1 text-sm text-gray-500">
-                  <time :datetime="post.datetime">{{ post.date }}</time>
+                  <time :datetime="article.created">{{ article.created }}</time>
                   <span aria-hidden="true">&middot;</span>
-                  <span>{{ post.readingTime }} read</span>
+                  <span>{{ article.changed }} read</span>
                 </div>
               </div>
             </div>
@@ -207,16 +202,21 @@ Naast deze kern zetten tal van vrijwilligers zich in om te zorgen dat het festiv
   </div>
 </div>
 
+
+
     </main>
   </div>
 </template>
 
 <script setup>
 import { useNuxtApp, useAsyncData } from '#app'
+import consolaGlobalInstance from 'consola';
 const apiUrl = 'https://api.bamfestival.nl'
 const { data, pending, error, refresh } = await useFetch('https://api.bamfestival.nl/jsonapi/node/sponsors?filter[status][value]=1&filter[promote][value]=1&sort=-field_weight,title&include=field_image&jsonapi_include=1')
 const sponsoren = data
-console.log(sponsoren)
+
+const { data:articles } = await useFetch('https://api.bamfestival.nl/jsonapi/node/article?page[limit]=6&filter[status][value]=1&filter[promote][value]=1&sort=-created&include=field_image&field_video&field_tags&jsonapi_include=1')
+
 
 
 
