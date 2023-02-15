@@ -1,6 +1,6 @@
 <template>
 <div class="bg-white">
-    <div class="mx-auto w-full py-12 px-6 lg:px-8 lg:py-24">
+    <div class="mx-auto w-full py-6 px-6 lg:px-8 lg:py-4">
       <div class="space-y-12">
         <div class="space-y-5 sm:space-y-4 md:max-w-xl lg:max-w-3xl xl:max-w-none">
           <h2 class="text-3xl font-bold tracking-tight sm:text-4xl">Highlights</h2>
@@ -55,6 +55,6 @@ function formatDateLong(time) {
 
     const apiUrl = 'https://cms.bamfestival.nl'
     const { data:highlights } = await useFetch('https://cms.bamfestival.nl/jsonapi/node/event?filter[status][value]=1&filter[promote][value]=1&sort=field_dag,-field_weight,title&include=field_image_portrait,field_location&filter[name-filter][condition][path]=field_weight&filter[name-filter][condition][operator]=IN&filter[name-filter][condition][value][1]=5&filter[name-filter][condition][value][2]=4&jsonapi_include=1')
-    const { data:morenames }  = await useFetch('https://cms.bamfestival.nl/jsonapi/node/event?filter[status][value]=1&filter[promote][value]=1&sort=-field_weight,title&filter[name-filter][condition][path]=field_weight&filter[name-filter][condition][operator]=IN&filter[name-filter][condition][value][1]=5&filter[name-filter][condition][value][2]=2&filter[name-filter][condition][value][3]=1&filter[name-filter][condition][value][4]=0&jsonapi_include=1')
+
     
 </script>

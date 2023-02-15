@@ -4,7 +4,7 @@
   <div class="text-left">
         <h2 class="text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl">Sponsoren van BAM! Festival</h2>
   </div>
-  <div class="mt-6 grid grid-cols-2 gap-0.5 md:grid-cols-6 xl:grid-cols-8 lg:mt-8">
+  <div class="mt-6 grid grid-cols-2 gap-0.5 md:grid-cols-6 xl:grid-cols-8 2xl:grid-cols-12 lg:mt-8">
         <div v-for="sponsor in sponsoren.data" :key="sponsor.title" class="col-span-1 flex justify-center  py-8 px-8">
           <a :href="sponsor.field_link.uri " target="_blank" :title="`Website ${ sponsor.title}`">
            <nuxt-img :src="`${ apiUrl }${sponsor.field_image.uri.url }`"  format="webp" :alt="`Logo ${ sponsor.title }, sponsor van BAM! Festival Hengelo (Ov.)`" loading="lazy"></nuxt-img>

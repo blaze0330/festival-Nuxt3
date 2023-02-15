@@ -12,7 +12,7 @@
             alt="Header BAM! Festival Hengelo (Ov.) - 2023"
         ></nuxt-img>
       </div>
-    
+ 
 <!-- Programma Highlights-->
  <BlockHighlights />
 <!-- Programma Highlights-->
