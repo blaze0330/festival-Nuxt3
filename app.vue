@@ -460,7 +460,7 @@ const solutions = [
     href: '/fotoalbums',
     icon: Squares2X2Icon,
   },
-  { name: 'Sponsoren', description: "Sponsoren van BAM! Festival", href: '/sponsoren', icon: ShieldCheckIcon },
+  { name: 'Sponsoren', description: "Sponsoren van BAM! Festival", href: '/sponsors', icon: ShieldCheckIcon },
   {
     name: 'Contact',
     description: "Contact opnemen met BAM! Festival",
