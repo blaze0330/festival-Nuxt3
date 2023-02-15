@@ -1,3 +1,5 @@
 <template>
-    <h1>Disclaimer</h1>
+   <!-- Sponsoren -->
+<BlockSponsors />
+<!-- Sponsoren -->
   </template>

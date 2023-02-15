@@ -13,100 +13,17 @@
         ></nuxt-img>
       </div>
     
+<!-- Programma Highlights-->
+ <BlockHighlights />
+<!-- Programma Highlights-->
 
-
-
-  <div class="bg-white">
-    <div class="mx-auto w-full py-12 px-6 lg:px-8 lg:py-24">
-      <div class="space-y-12">
-        <div class="space-y-5 sm:space-y-4 md:max-w-xl lg:max-w-3xl xl:max-w-none">
-          <h2 class="text-3xl font-bold tracking-tight sm:text-4xl">Highlights</h2>
-          
-        </div>
-        <ul role="list" class="space-y-12 sm:grid sm:grid-cols-2 sm:gap-x-6 sm:gap-y-12 sm:space-y-0 lg:grid-cols-4 lg:gap-x-8">
-          <li v-for="person in people" :key="person.name">
-            <div class="space-y-4">
-              <div class="aspect-w-3 aspect-h-2">
-                <img class="rounded-lg object-cover shadow-lg" :src="person.imageUrl" alt="" />
-              </div>
-
-              <div class="space-y-2">
-                <div class="space-y-1 text-lg font-medium leading-6">
-                  <h3>{{ person.name }}</h3>
-                  <p class="text-indigo-600">{{ person.role }}</p>
-                </div>
-                <ul role="list" class="flex space-x-5">
-                  <li>
-                    <a :href="person.twitterUrl" class="text-gray-400 hover:text-gray-500">
-                      <span class="sr-only">Twitter</span>
-                      <svg class="h-5 w-5" aria-hidden="true" fill="currentColor" viewBox="0 0 20 20">
-                        <path d="M6.29 18.251c7.547 0 11.675-6.253 11.675-11.675 0-.178 0-.355-.012-.53A8.348 8.348 0 0020 3.92a8.19 8.19 0 01-2.357.646 4.118 4.118 0 001.804-2.27 8.224 8.224 0 01-2.605.996 4.107 4.107 0 00-6.993 3.743 11.65 11.65 0 01-8.457-4.287 4.106 4.106 0 001.27 5.477A4.073 4.073 0 01.8 7.713v.052a4.105 4.105 0 003.292 4.022 4.095 4.095 0 01-1.853.07 4.108 4.108 0 003.834 2.85A8.233 8.233 0 010 16.407a11.616 11.616 0 006.29 1.84" />
-                      </svg>
-                    </a>
-                  </li>
-                  <li>
-                    <a :href="person.linkedinUrl" class="text-gray-400 hover:text-gray-500">
-                      <span class="sr-only">LinkedIn</span>
-                      <svg class="h-5 w-5" aria-hidden="true" fill="currentColor" viewBox="0 0 20 20">
-                        <path fill-rule="evenodd" d="M16.338 16.338H13.67V12.16c0-.995-.017-2.277-1.387-2.277-1.39 0-1.601 1.086-1.601 2.207v4.248H8.014v-8.59h2.559v1.174h.037c.356-.675 1.227-1.387 2.526-1.387 2.703 0 3.203 1.778 3.203 4.092v4.711zM5.005 6.575a1.548 1.548 0 11-.003-3.096 1.548 1.548 0 01.003 3.096zm-1.337 9.763H6.34v-8.59H3.667v8.59zM17.668 1H2.328C1.595 1 1 1.581 1 2.298v15.403C1 18.418 1.595 19 2.328 19h15.34c.734 0 1.332-.582 1.332-1.299V2.298C19 1.581 18.402 1 17.668 1z" clip-rule="evenodd" />
-                      </svg>
-                    </a>
-                  </li>
-                </ul>
-              </div>
-            </div>
-          </li>
-        </ul>
-      </div>
-    </div>
-  </div>
-
-
-
+<!-- Programma Highlights-->
+<BlockMoreNames />
+<!-- Programma Highlights-->
 
 <!-- laatste nieuws -->
-  <div class="relative bg-gray-50 px-6 pt-16 pb-20 lg:px-8 lg:pt-4 lg:pb-28">
-    <div class="absolute inset-0">
-      <div class="h-1/3 bg-white sm:h-2/3" />
-    </div>
-    <div class="relative mx-auto w-full">
-      <div class="text-left">
-        <h2 class="text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl">Laatste Nieuws</h2>
-        
-      </div>
-      <div class="mx-auto mt-12 grid max-w-lg gap-5 lg:max-w-none lg:grid-cols-3">
-        <div v-for="article in articles.data" :key="article.title" class="flex flex-col overflow-hidden rounded-lg shadow-lg">
-          <div class="flex-shrink-0">
-            <img class="h-96 w-full object-cover" :src="`${ apiUrl }${ article.field_image.uri.url}`" alt="" />
-          </div>
-          <div class="flex flex-1 flex-col justify-between bg-white p-6">
-            <div class="flex-1">
-              <p class="text-sm font-medium text-indigo-600">
-                <a href="#" class="hover:underline">{{ article.title  }}</a>
-              </p>
-              <a href="#" class="mt-2 block">
-                <p class="text-xl font-semibold text-gray-900">{{ article.title }}</p>
-                <p class="mt-3 text-base text-gray-500" v-html="article.body.processed"></p>
-              </a>
-            </div>
-            <div class="mt-6 flex items-center">
- 
-              <div class="ml-3">
-                <p class="text-sm font-medium text-gray-900">
-                  {{ article.title }}
-                </p>
-                <div class="flex space-x-1 text-sm text-gray-500">
-                  <time :datetime="article.created">{{ formatDateLong(article.created) }}</time>
-                  <span aria-hidden="true">&middot;</span>
-                  <span>{{ formatDateLong(article.changed)  }}</span>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
+ <BlockLaatsteNieuws />
+<!-- laatste nieuws -->
 
 
 
@@ -155,8 +72,8 @@ We hebben niet alleen op de festivaldag zelf heel veel mensen nodig maar ook tij
 
           <p class="mx-auto mt-6 max-w-xl text-lg leading-8 text-gray-300">Deze accreditatie kan men tot een een week voor aanvang aanvragen hier online op de website middels dit inschrijf formulier.  Foto's van voorgaande edities kan men hier vinden. Vragen? Neem contact op met pers@bamfestival.nl</p>
         <div class="mt-10 flex items-center justify-center gap-x-6">
-          <a href="#" class="rounded-md bg-white px-3.5 py-1.5 text-base font-semibold leading-7 text-gray-900 shadow-sm hover:bg-gray-100 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-white">Aanvragen</a>
-          <a href="#" class="text-base font-semibold leading-7 text-white">Fotoalbums<span aria-hidden="true">→</span></a>
+          <a href="/fotografie-pers" class="rounded-md bg-white px-3.5 py-1.5 text-base font-semibold leading-7 text-gray-900 shadow-sm hover:bg-gray-100 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-white">Aanvragen</a>
+          <a href="/fotoalbums" class="text-base font-semibold leading-7 text-white">Fotoalbums&nbsp;<span aria-hidden="true">→</span></a>
         </div>
       </div>
     </div>
@@ -179,8 +96,8 @@ Naast deze kern zetten tal van vrijwilligers zich in om te zorgen dat het festiv
 
 <p class="mx-auto mt-6 max-w-xl text-lg leading-8 text-indigo-200">Wil jij helpen dit zo te houden? Klik hier om hier meer informatie over te krijgen</p>
         <div class="mt-10 flex items-center justify-center gap-x-6">
-          <a href="#" class="rounded-md bg-white px-3.5 py-1.5 text-base font-semibold leading-7 text-indigo-600 shadow-sm hover:bg-indigo-50 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-white">Meer informatie</a>
-          <a href="#" class="text-base font-semibold leading-7 text-white">Wie zijn er al sponsor? <span aria-hidden="true">→</span></a>
+          <a href="/sponsor-worden" class="rounded-md bg-white px-3.5 py-1.5 text-base font-semibold leading-7 text-indigo-600 shadow-sm hover:bg-indigo-50 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-white">Meer informatie</a>
+          <a href="/sponsors" class="text-base font-semibold leading-7 text-white">Wie zijn er al sponsor? <span aria-hidden="true">→</span></a>
         </div>
       </div>
     </div>
@@ -189,20 +106,8 @@ Naast deze kern zetten tal van vrijwilligers zich in om te zorgen dat het festiv
 
 
 <!-- Sponsoren -->
-<div class="bg-white mx-auto w-full py-12 px-6 lg:px-8 lg:py-12">
-  <div class="text-left">
-        <h2 class="text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl">Sponsoren van BAM! Festival</h2>
-  </div>
-  <div class="mt-6 grid grid-cols-2 gap-0.5 md:grid-cols-6 xl:grid-cols-8 lg:mt-8">
-        <div v-for="sponsor in sponsoren.data" :key="sponsor.title" class="col-span-1 flex justify-center  py-8 px-8">
-          <a :href="sponsor.field_link.uri " target="_blank" :title="`Website ${ sponsor.title}`">
-           <nuxt-img :src="`${ apiUrl }${sponsor.field_image.uri.url }`"  format="webp" :alt="`Logo ${ sponsor.title }, sponsor van BAM! Festival Hengelo (Ov.)`" loading="lazy"></nuxt-img>
-        </a>
-        </div>
-  </div>
-</div>
-
-
+<BlockSponsors />
+<!-- Sponsoren -->
 
     </main>
   </div>
@@ -219,66 +124,7 @@ function formatDateLong(time) {
 }
 import { useNuxtApp, useAsyncData } from '#app'
 import consolaGlobalInstance from 'consola';
-const apiUrl = 'https://api.bamfestival.nl'
-const { data, pending, error, refresh } = await useFetch('https://api.bamfestival.nl/jsonapi/node/sponsors?filter[status][value]=1&filter[promote][value]=1&sort=-field_weight,title&include=field_image&jsonapi_include=1')
-const sponsoren = data
-
-const { data:articles } = await useFetch('https://api.bamfestival.nl/jsonapi/node/article?page[limit]=6&filter[status][value]=1&filter[promote][value]=1&sort=-created&include=field_image&field_video&field_tags&jsonapi_include=1')
-
-
-
-
-const people = [
-  {
-    name: 'Lindsay Walton',
-    role: 'Front-end Developer',
-    imageUrl:
-      'https://images.unsplash.com/photo-1517841905240-472988babdf9?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=8&w=1024&h=1024&q=80',
-    twitterUrl: '#',
-    linkedinUrl: '#',
-  },
-  {
-    name: 'Quam Ridiculus Sem',
-    role: 'Front-end Developer',
-    imageUrl:
-      'https://thispersondoesnotexist.com/image',
-    twitterUrl: '#',
-    linkedinUrl: '#',
-  },
-  {
-    name: 'Euismod Pellentesque Consectetur Fermentum',
-    role: 'Front-end Developer',
-    imageUrl:
-      'https://thispersondoesnotexist.com/image',
-    twitterUrl: '#',
-    linkedinUrl: '#',
-  },
-  {
-    name: 'Cras Sem Fusce Amet Condimentum',
-    role: 'Front-end Developer',
-    imageUrl:
-      'https://images.unsplash.com/photo-1517841905240-472988babdf9?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=8&w=1024&h=1024&q=80',
-    twitterUrl: '#',
-    linkedinUrl: '#',
-  },
-  {
-    name: 'Ullamcorper Pellentesque',
-    role: 'Front-end Developer',
-    imageUrl:
-      'https://placebeard.it/900x900',
-    twitterUrl: '#',
-    linkedinUrl: '#',
-  },
-  {
-    name: 'Mattis',
-    role: 'Front-end Developer',
-    imageUrl:
-      'https://placebeard.it/900x900',
-    twitterUrl: '#',
-    linkedinUrl: '#',
-  },
-  
-]
+const apiUrl = 'https://cms.bamfestival.nl'
 
 const posts = [
   {
@@ -317,41 +163,6 @@ const posts = [
         'https://images.unsplash.com/photo-1550525811-e5869dd03032?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80',
     },
   },
-  {
-    title: 'Improve your customer experience',
-    href: '#',
-    category: { name: 'Case Study', href: '#' },
-    description:
-      'Lorem ipsum dolor sit amet consectetur adipisicing elit. Sint harum rerum voluptatem quo recusandae magni placeat saepe molestiae, sed excepturi cumque corporis perferendis hic.',
-    date: 'Feb 12, 2020',
-    datetime: '2020-02-12',
-    imageUrl:
-      'https://images.unsplash.com/photo-1492724441997-5dc865305da7?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1679&q=80',
-    readingTime: '11 min',
-    author: {
-      name: 'Daniela Metz',
-      href: '#',
-      imageUrl:
-        'https://images.unsplash.com/photo-1487412720507-e7ab37603c6f?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80',
-    },
-  },
-  {
-    title: 'Improve your customer experience',
-    href: '#',
-    category: { name: 'Case Study', href: '#' },
-    description:
-      'Lorem ipsum dolor sit amet consectetur adipisicing elit. Sint harum rerum voluptatem quo recusandae magni placeat saepe molestiae, sed excepturi cumque corporis perferendis hic.',
-    date: 'Feb 12, 2020',
-    datetime: '2020-02-12',
-    imageUrl:
-      'https://images.unsplash.com/photo-1492724441997-5dc865305da7?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1679&q=80',
-    readingTime: '11 min',
-    author: {
-      name: 'Daniela Metz',
-      href: '#',
-      imageUrl:
-        'https://images.unsplash.com/photo-1487412720507-e7ab37603c6f?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80',
-    },
-  },
+  
 ]
 </script>
