@@ -125,7 +125,7 @@ function formatDateLong(time) {
 }
 import { useNuxtApp, useAsyncData } from '#app'
 import consolaGlobalInstance from 'consola';
-const apiUrl = 'https://cms.bamfestival.nl'
+
 
 const posts = [
   {

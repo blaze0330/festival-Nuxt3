@@ -20,6 +20,7 @@ export default defineNuxtConfig({
         '@nuxtjs/tailwindcss',
         '@nuxt/image-edge',
         'nuxt-jsonapi'
+        
     ]
     
 })

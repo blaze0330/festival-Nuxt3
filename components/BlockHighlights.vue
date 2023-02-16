@@ -16,7 +16,7 @@
               <div class="space-y-2">
                 <div class="space-y-1 font-medium leading-6">
                   <h3 class="text-indigo-600 text-xl font-bold uppercase">{{ event.title }}</h3>
-                  <p class="text-sm font-bold" >{{ event.field_dag }} | {{ runtimeConfig.public.apiUrl }}</p>
+                  <p class="text-sm font-bold" >{{ event.field_dag }} | {{ $dayjs(new Date(event.created)).locale('nl').format('L LLLL') }}</p>
                 </div>
               </div>
             </div>
