@@ -5,8 +5,14 @@ export default defineNuxtConfig({
     image: {
         provider: "ipx"
     },
+    runtimeConfig: {
+        
+        public: {
+            apiUrl: process.env.API_BASE_URL || "https://cms.bamfestival.nl",
+        }
+    },
     jsonApi: {
-        baseURL: 'https://api.bamfestival.nl/jsonapi',
+        baseURL: 'https://cms.bamfestival.nl/jsonapi',
         /* other module options */
       },
 

@@ -114,6 +114,7 @@ Naast deze kern zetten tal van vrijwilligers zich in om te zorgen dat het festiv
 </template>
 
 <script setup>
+   const runtimeConfig = useRuntimeConfig();
 function formatDateLong(time) {
     const date = new Date(time);
     

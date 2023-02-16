@@ -299,6 +299,7 @@
 </template>
 
 <script setup>
+   const runtimeConfig = useRuntimeConfig();
 function formatDate(time) {
     const date = new Date(time);
     

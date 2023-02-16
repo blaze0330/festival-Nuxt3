@@ -10,13 +10,13 @@
           <li v-for="event in highlights.data" :key="event.title">
             <div class="space-y-4">
               <div class="aspect-w-3 aspect-h-2">
-                  <nuxt-img class="rounded-lg object-cover shadow-lg" :src="`${ apiUrl }${event.field_image_portrait.uri.url }`"  format="webp" :alt="`${ event.title }, op BAM! Festival Hengelo (Ov.)`" loading="lazy"></nuxt-img>
+                  <nuxt-img class="rounded-lg object-cover shadow-lg" :src="`${ runtimeConfig.public.apiUrl }${event.field_image_portrait.uri.url }`"  format="webp" :alt="`${ event.title }, op BAM! Festival Hengelo (Ov.)`" loading="lazy"></nuxt-img>
               </div>
 
               <div class="space-y-2">
                 <div class="space-y-1 font-medium leading-6">
                   <h3 class="text-indigo-600 text-xl font-bold uppercase">{{ event.title }}</h3>
-                  <p class="text-sm font-bold" >{{ event.field_dag }}</p>
+                  <p class="text-sm font-bold" >{{ event.field_dag }} | {{ runtimeConfig.public.apiUrl }}</p>
                 </div>
               </div>
             </div>
@@ -27,6 +27,7 @@
   </div>
 </template>
 <script setup>
+  const runtimeConfig = useRuntimeConfig();
 
 function formatDateLong(time) {
       const date = new Date(time);
@@ -35,7 +36,7 @@ function formatDateLong(time) {
     return date.toLocaleString("nl-NL", options);
                                }
 
-    const apiUrl = 'https://cms.bamfestival.nl'
+   
     const { data:highlights } = await useFetch('https://cms.bamfestival.nl/jsonapi/node/event?filter[status][value]=1&filter[promote][value]=1&sort=field_dag,-field_weight,title&include=field_image_portrait,field_location&filter[name-filter][condition][path]=field_weight&filter[name-filter][condition][operator]=IN&filter[name-filter][condition][value][1]=5&filter[name-filter][condition][value][2]=4&jsonapi_include=1')
 
     
