@@ -19,7 +19,8 @@ export default defineNuxtConfig({
     modules: [
         '@nuxtjs/tailwindcss',
         '@nuxt/image-edge',
-        'nuxt-jsonapi'
+        'nuxt-jsonapi',
+        'nuxt-swiper'
         
     ]
     

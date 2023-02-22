@@ -298,7 +298,7 @@
   </footer>
 </template>
 
-<script setup>
+<script setup lang="ts">
    const runtimeConfig = useRuntimeConfig();
 function formatDate(time) {
     const date = new Date(time);

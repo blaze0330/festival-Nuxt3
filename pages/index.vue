@@ -1,7 +1,5 @@
 <template>
   <div class="bg-white">
-
-
     <main>
       <div>
         <nuxt-img 
@@ -13,6 +11,10 @@
         ></nuxt-img>
       </div>
  
+<!-- test-->
+
+<!-- /test -->
+
 <!-- Programma Highlights-->
  <BlockHighlights />
 <!-- Programma Highlights-->
@@ -62,8 +64,6 @@ We hebben niet alleen op de festivaldag zelf heel veel mensen nodig maar ook tij
 
 
   <div class="flex flex-wrap w-full">
-
-
   <div class="relative isolate overflow-hidden bg-gray-900 grow">
     <div class="py-24 px-6 sm:px-6 sm:py-32 lg:px-8">
       <div class="mx-auto max-w-2xl text-center">
@@ -113,19 +113,12 @@ Naast deze kern zetten tal van vrijwilligers zich in om te zorgen dat het festiv
   </div>
 </template>
 
-<script setup>
+<script setup lang="ts">
    const runtimeConfig = useRuntimeConfig();
-function formatDateLong(time) {
-    const date = new Date(time);
-    
 
-    const options = { weekday: 'long', year: 'numeric', month: 'long', day: 'numeric', hour: 'numeric', minute: 'numeric'};
-    
-    return date.toLocaleString("nl-NL", options);
-}
 import { useNuxtApp, useAsyncData } from '#app'
 import consolaGlobalInstance from 'consola';
-
+import { ChevronDownIcon } from '@heroicons/vue/20/solid'
 
 const posts = [
   {

@@ -13,7 +13,7 @@
   </div>
 </div>
 </template>
-<script setup>
+<script setup lang="ts">
     const runtimeConfig = useRuntimeConfig();
     const { data:sponsoren } = await useFetch('https://cms.bamfestival.nl/jsonapi/node/sponsor?filter[status][value]=1&filter[promote][value]=1&sort=-field_weight,title&include=field_image&jsonapi_include=1')
 </script>s    
