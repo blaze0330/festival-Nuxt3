@@ -108,14 +108,14 @@
                       <div>
                         <h3 class="text-base font-medium text-gray-500">Laatste nieuws</h3>
                         <ul role="list" class="mt-6 space-y-6">
-                          <li v-for="post in blogPosts" :key="post.id" class="flow-root">
-                            <a :href="post.href" class="-m-3 flex rounded-lg p-3 hover:bg-gray-100">
+                          <li v-for="article in articles.data" :key="article.title" class="flow-root">
+                            <a :href="`/nieuws/${ article.id }`" class="-m-3 flex rounded-lg p-3 hover:bg-gray-100">
                               <div class="hidden flex-shrink-0 sm:block">
-                                <img class="h-20 w-32 rounded-md object-cover" :src="post.imageUrl" alt="" />
+                                <img class="h-20 w-32 rounded-md object-cover" :src="`${ runtimeConfig.public.apiUrl }${ article.field_image.uri.url }`" alt="article.title" />
                               </div>
                               <div class="w-0 flex-1 sm:ml-8">
-                                <h4 class="truncate text-base font-medium text-gray-900">{{ post.name }}</h4>
-                                <p class="mt-1 text-sm text-gray-500">{{ post.preview }}</p>
+                                <h4 class="truncate text-base font-medium text-gray-900">{{ article.title }}</h4>
+                                <p class="mt-1 text-sm text-gray-500"  v-html="article.body.value.slice(0, 150)"></p>
                               </div>
                             </a>
                           </li>
@@ -299,19 +299,11 @@
 </template>
 
 <script setup lang="ts">
-   const runtimeConfig = useRuntimeConfig();
-function formatDate(time) {
-    const date = new Date(time);
-    
-    // Get year, month, and day part from the date
-    const year = date.toLocaleString("default", { year: "numeric" });
-    const month = date.toLocaleString("default", { month: "2-digit" });
-    const day = date.toLocaleString("default", { day: "2-digit" });
-    
-    return `${year}/${month}/${day}`;
-}
+
 import { defineComponent, h } from 'vue'
-const apiUrl = 'https://api.bamfestival.nl'
+const runtimeConfig = useRuntimeConfig();
+const { data:articles } = await useFetch('https://cms.bamfestival.nl/jsonapi/node/article?page[limit]=6&filter[status][value]=1&filter[promote][value]=1&sort=-created&include=field_image&field_video&field_tags&jsonapi_include=1&page[limit]=3');
+
 const navigation = {
   solutions: [
     { name: 'Muziek', href: '/programma' },

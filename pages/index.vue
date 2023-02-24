@@ -115,10 +115,7 @@ Naast deze kern zetten tal van vrijwilligers zich in om te zorgen dat het festiv
 
 <script setup lang="ts">
    const runtimeConfig = useRuntimeConfig();
-
-import { useNuxtApp, useAsyncData } from '#app'
-import consolaGlobalInstance from 'consola';
-import { ChevronDownIcon } from '@heroicons/vue/20/solid'
+   
 
 const posts = [
   {
