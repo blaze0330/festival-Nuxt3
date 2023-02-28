@@ -5,25 +5,7 @@
     <div class="pointer-events-none absolute inset-0 z-30 shadow" aria-hidden="true" />
     <div class="relative z-20">
       <div class="mx-auto flex max-w-7xl items-center justify-between py-5 px-6 sm:py-4 md:justify-start md:space-x-10 lg:px-8">
-        <div>
-          <a href="/" class="flex" title="Home">
-            <span class="sr-only">BAM! Festival</span>
-            <svg class="h-8 w-auto sm:h-10" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
-                  viewBox="0 0 512 512" style="enable-background:new 0 0 512 512;" xml:space="preserve">
-                    <path d="M471.8,265.1c-9.2,1.7-16.8,7.7-20.2,16L431,151.8l-47.8,8.7l-17.2,60.2c-3.9,13.8-6.7,25.7-9.2,40.2l-0.5,0.1
-                      c-2.6-14.1-5.1-25.2-8.4-36.3l-16.2-54.8l-49.2,9l-22.3,138.6l-42.7-126.7l-49.9,9.1l-34.7,116c-0.1-0.7-0.2-1.4-0.3-2.2
-                      c-2.4-12.9-10.5-23.5-21.6-25.2l0-0.2c15.2-11.7,23.5-27,19.8-46.8c-4.7-25.8-27.6-31-57.8-25.5c-17.2,3.1-44.4,8.6-60.4,12.5
-                      l-1.2,166.6c26.8-4.9,45-7.7,56.7-9.9c23.5-4.3,41.6-15.1,52.7-28.9l-5.9,19.8l44.2-8.1l8.1-28.6l48.7-8.9l8.1,25.7l30.8-5.6
-                      l15.5-2.8l29.6-5.4l6.9-52.9c1.6-12.9,3.1-26,4.1-42.5l0.2,0c2.5,14.9,6.5,32.6,10.6,47.2l12.1,42l40.6-7.4l13-52
-                      c4-16,7.3-30.5,9.7-45.5l0.5-0.1c1.3,14.1,2.8,26.2,4.3,37l7.2,54.2l47.3-8.7l-1.1-6.8c5,5.2,12.6,8.2,21.5,6.5
-                      c14.1-2.6,24.6-15.4,21.8-30.4C496.9,271.4,485.9,262.5,471.8,265.1z M65.2,348.3c-2.4,0.4-7.2,1.1-9.6,1.3l-0.1-30.4
-                      c2.8-0.8,9-1.9,14.1-2.8c9.6-1.7,15.6,1.4,16.9,8.5C88.1,334.5,81.4,345.3,65.2,348.3z M63,283.7c-2.4,0.4-4.8,0.9-7.2,1.1
-                      l0.3-28.2c3.8-0.9,7.3-1.8,12.6-2.8c9.6-1.7,15.4,0.4,16.6,6.9C87.2,271.4,78.8,280.8,63,283.7z M177.9,301.5l5.4-19.3
-                      c3.3-11.7,6.1-23.1,8-33.1l0.5-0.1c2.1,10,4.6,18.4,7.5,27.5l6.1,19.9L177.9,301.5z"/>
-                    <polygon points="450.9,134.6 456.4,260.5 493.9,253.6 500.8,125.4"/>
-                </svg>
-          </a>
-        </div>
+
         <div class="-my-2 -mr-2 md:hidden">
           <PopoverButton class="inline-flex items-center justify-center rounded-md bg-white p-2 text-gray-400 hover:bg-gray-100 hover:text-gray-500 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-indigo-500">
             <span class="sr-only">Open menu</span>
@@ -150,8 +132,8 @@
             <a href="/contact" class="text-base font-medium text-gray-500 hover:text-gray-900">Contact</a>
 
           <div class="flex items-center md:ml-12">
-            <a href="#" class="text-base font-medium text-gray-500 hover:text-gray-900">Sign in</a>
-            <a href="#" class="ml-8 inline-flex items-center justify-center rounded-md border border-transparent bg-indigo-600 px-4 py-2 text-base font-medium text-white shadow-sm hover:bg-indigo-700">Sign up</a>
+            
+            <a href="/timetable" class="ml-8 inline-flex items-center justify-center rounded-md border border-transparent bg-indigo-600 px-4 py-2 text-base font-medium text-white shadow-sm hover:bg-indigo-700">Timetable</a>
           </div>
         </div>
       </div>
@@ -163,7 +145,7 @@
           <div class="px-5 pt-5 pb-6 sm:pb-8">
             <div class="flex items-center justify-between">
               <div>
-                <svg class="h-8 w-auto sm:h-10" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+                <svg class="h-16 w-auto sm:h-16" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
                   viewBox="0 0 512 512" style="enable-background:new 0 0 512 512;" xml:space="preserve">
                     <path d="M471.8,265.1c-9.2,1.7-16.8,7.7-20.2,16L431,151.8l-47.8,8.7l-17.2,60.2c-3.9,13.8-6.7,25.7-9.2,40.2l-0.5,0.1
                       c-2.6-14.1-5.1-25.2-8.4-36.3l-16.2-54.8l-49.2,9l-22.3,138.6l-42.7-126.7l-49.9,9.1l-34.7,116c-0.1-0.7-0.2-1.4-0.3-2.2
@@ -227,10 +209,10 @@
 
   <footer class="bg-white" aria-labelledby="footer-heading">
     <h2 id="footer-heading" class="sr-only">Footer</h2>
-    <div class="mx-auto w-full px-6 pb-8 pt-16 sm:pt-24 lg:px-8 lg:pt-32">
+    <div class="mx-auto w-full px-6 pb-8 pt-24 sm:pt-24 lg:px-8 lg:pt-32">
       <div class="xl:grid xl:grid-cols-3 xl:gap-8">
         <div class="space-y-8">
-          <svg class="h-7 w-auto sm:h-10" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+          <svg class="h-16 w-auto sm:h-16" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
                   viewBox="0 0 512 512"  xml:space="preserve">
                     <path d="M471.8,265.1c-9.2,1.7-16.8,7.7-20.2,16L431,151.8l-47.8,8.7l-17.2,60.2c-3.9,13.8-6.7,25.7-9.2,40.2l-0.5,0.1
                       c-2.6-14.1-5.1-25.2-8.4-36.3l-16.2-54.8l-49.2,9l-22.3,138.6l-42.7-126.7l-49.9,9.1l-34.7,116c-0.1-0.7-0.2-1.4-0.3-2.2
@@ -245,10 +227,10 @@
                     <polygon points="450.9,134.6 456.4,260.5 493.9,253.6 500.8,125.4"/>
                 </svg>
           <p class="text-base leading-6 text-gray-600">De eerste editie van het BAM! Festival werd in 2008 gehouden. Met een grote passie voor kunst, cultuur en muziek zet een grote groep vrijwilligers zich al jaren in om een festival te organiseren dat jaarlijks ongeveer 17.000 bezoekers trekt. Naast muziek is er ook een uitgebreid theaterprogramma en een speciaal programma voor kinderen. Voor beide dagen is de entree gratis.</p>
-          <div class="flex space-x-6">
-            <a v-for="item in navigation.social" :key="item.name" :href="item.href" class="text-gray-400 hover:text-gray-500">
+          <div class="flex space-x-8">
+            <a v-for="item in navigation.social" :key="item.name" :href="item.href" class="text-indigo-800 hover:text-indigo-600" :title="`BAM! Festival Social Media ${item.name}`" target="_blank">
               <span class="sr-only">{{ item.name }}</span>
-              <component :is="item.icon" class="h-6 w-6" aria-hidden="true" />
+              <component :is="item.icon" class="h-8 w-8" aria-hidden="true" />
             </a>
           </div>
         </div>
@@ -291,7 +273,7 @@
           </div>
         </div>
       </div>
-      <div class="mt-16 border-t border-gray-900/10 pt-8 sm:mt-20 lg:mt-20">
+      <div class="mt-16 border-t border-gray-900/10 pt-8 sm:mt-16 lg:mt-16">
         <p class="text-base leading-5 text-gray-800 text-center">&copy; 2023 BAM! Festival Hengelo | Vondelstraat 49 | 7551 BB Hengelo (Ov).  |  Deze site gebruikt cookies klik  <NuxtLink to="/cookies">hier</NuxtLink>, voor meer info.  <NuxtLink to="/disclaimer-copy-right-privacy">Disclaimer</NuxtLink></p>
       </div>
     </div>
@@ -309,6 +291,9 @@ const navigation = {
     { name: 'Muziek', href: '/programma' },
     { name: 'Theater', href: '/theater' },
     { name: 'Kunst', href: '/kunst' },
+    { name: 'Timetable', href: '/timetable' },
+    { name: 'Plattegrond', href: '/plattegrond' },
+    
 
   ],
   support: [
@@ -319,11 +304,11 @@ const navigation = {
     { name: 'Aftermovies', href: '/aftermovies' },
   ],
   company: [
-    { name: 'Cookies Verklaring', href: '/cookies' },
+    { name: 'Fotoalbums', href: '/fotoalbums' },
     { name: 'Disclaimer, Copyright & Privacy', href: '/disclaimer-copy-right-privacy' },
     { name: 'ANBI-Status', href: '/anbi-status' },
-    { name: 'Press', href: '#' },
-    { name: 'Partners', href: '#' },
+    { name: 'Cookies Verklaring', href: '/cookies' },
+    { name: 'Sponsors', href: '/sponsors' },
   ],
   legal: [
     { name: 'Vrijwilliger worden', href: '/inschrijven-vrijwilligers' },
@@ -394,20 +379,33 @@ const navigation = {
 
 import { Popover, PopoverButton, PopoverGroup, PopoverPanel } from '@headlessui/vue'
 import {
+  AtSymbolIcon,
   Bars3Icon,
   BookmarkSquareIcon,
+  BuildingLibrary,
   BriefcaseIcon,
   BuildingOfficeIcon,
+  CameraIcon,
   ChartBarIcon,
   CheckCircleIcon,
   ComputerDesktopIcon,
+  CurrencyEuroIcon,
   CursorArrowRaysIcon,
+  DocumentIcon,
+  FilmIcon,
   GlobeAltIcon,
+  HeartIcon,
   InformationCircleIcon,
+  ListBulletIcon,
+  MapIcon,
+  MusicalNoteIcon,
   NewspaperIcon,
   PhoneIcon,
+  PhotoIcon,
   PlayIcon,
+  QuestionMarkCircleIcon,
   ShieldCheckIcon,
+  SpeakerWaveIcon,
   Squares2X2Icon,
   UserGroupIcon,
   XMarkIcon,
@@ -418,19 +416,19 @@ const lineup = [
   {
     name: 'Muziek',
     description: 'Alle muziek programmering van vrijdag  en zaterdag',
-    href: '/programma',
-    icon: ChartBarIcon,
+    href: '/programma/muziek',
+    icon: MusicalNoteIcon,
   },
   {
     name: 'Theater',
     description: 'Theater programmering op Zaterdag',
-    href: '/theater',
-    icon: CursorArrowRaysIcon,
+    href: '/programma/theater',
+    icon: SpeakerWaveIcon,
   },
   { name: 'Kunst',
     description: "Kunst tijdens het weekend van BAM! Festival", 
     href: '/kunst', 
-    icon: ShieldCheckIcon },
+    icon: HeartIcon, },
 
 ]
 const solutions = [
@@ -438,64 +436,47 @@ const solutions = [
     name: 'Programmering',
     description: 'Ga naar de programmering van BAM! Muziek, Theater en Kunst.',
     href: '/programma',
-    icon: ChartBarIcon,
+    icon: MusicalNoteIcon,
   },
   {
     name: 'Nieuws',
     description: 'Laatste Nieuws van BAM!',
     href: '/nieuws',
-    icon: CursorArrowRaysIcon,
+    icon: NewspaperIcon,
   },
-  { name: 'Vrijwilliger worden', description: "Vrijwilliger worden bij BAM! Festival", href: '/inschrijven-vrijwilligers', icon: ShieldCheckIcon },
+  { name: 'Vrijwilliger worden', description: "Vrijwilliger worden bij BAM! Festival", href: '/inschrijven-vrijwilligers', icon: UserGroupIcon },
   {
     name: 'Fotos',
     description: "Fotoalbums van de voorgaande edites per fotograaf",
     href: '/fotoalbums',
-    icon: Squares2X2Icon,
+    icon: PhotoIcon,
   },
-  { name: 'Sponsoren', description: "Sponsoren van BAM! Festival", href: '/sponsors', icon: ShieldCheckIcon },
+  { name: 'Sponsoren', description: "Sponsoren van BAM! Festival", href: '/sponsors', icon: CurrencyEuroIcon },
   {
     name: 'Contact',
     description: "Contact opnemen met BAM! Festival",
     href: '/contact',
-    icon: Squares2X2Icon,
+    icon: PhoneIcon,
   },
 ]
 const callsToAction = [
-  { name: 'Aftermovie', href: '/aftermovies', icon: PlayIcon },
-  { name: 'Programmering', href: '/programma', icon: CheckCircleIcon },
+  { name: 'Aftermovie', href: '/aftermovies', icon: FilmIcon },
+  { name: 'Programmering', href: '/programma', icon: MusicalNoteIcon },
   { name: 'Contact', href: '/contact', icon: PhoneIcon },
 ]
 const company = [
   { name: 'Informatie algemeen', href: '#', icon: InformationCircleIcon },
-  { name: 'Route en Parkeren', href: '/route-parkeren', icon: BuildingOfficeIcon },
-  { name: 'Huisregels', href: '/huisregels', icon: NewspaperIcon },
-  { name: 'Historie', href: '/historie', icon: BriefcaseIcon },
+  { name: 'Route en Parkeren', href: '/route-parkeren', icon: MapIcon },
+  { name: 'Huisregels', href: '/huisregels', icon: ListBulletIcon},
+  { name: 'Historie', href: '/historie', icon: DocumentIcon },
   
 ]
 const resources = [
   { name: 'Vrijwilliger worden', href: '/inschrijven-vrijwilligers', icon: UserGroupIcon },
-  { name: 'Sponsor worden', href: '/sponsor-worden', icon: GlobeAltIcon },
-  { name: 'Pers en fotografie', href: '/pers-fotografie', icon: BookmarkSquareIcon },
-  { name: 'Enquete', href: '/enquete', icon: ComputerDesktopIcon },
+  { name: 'Sponsor worden', href: '/sponsor-worden', icon: CurrencyEuroIcon },
+  { name: 'Pers en fotografie', href: '/pers-fotografie', icon: CameraIcon},
+  { name: 'Enquete', href: '/enquete', icon:  QuestionMarkCircleIcon },
   { name: 'Privacy', href: '/disclaimer-copy-right-privacy', icon: ShieldCheckIcon },
 ]
-const blogPosts = [
-  {
-    id: 1,
-    name: 'Boost your conversion rate',
-    href: '#',
-    preview: 'Eget ullamcorper ac ut vulputate fames nec mattis pellentesque elementum. Viverra tempor id mus.',
-    imageUrl:
-      'https://images.unsplash.com/photo-1558478551-1a378f63328e?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=2849&q=80',
-  },
-  {
-    id: 2,
-    name: 'How to use search engine optimization to drive traffic to your site',
-    href: '#',
-    preview: 'Eget ullamcorper ac ut vulputate fames nec mattis pellentesque elementum. Viverra tempor id mus.',
-    imageUrl:
-      'https://images.unsplash.com/photo-1486312338219-ce68d2c6f44d?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=2300&q=80',
-  },
-]
+
 </script>
